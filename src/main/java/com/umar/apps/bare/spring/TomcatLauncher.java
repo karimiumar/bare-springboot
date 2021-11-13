@@ -10,6 +10,7 @@ import javax.annotation.PostConstruct;
 public class TomcatLauncher {
     private static final Logger LOGGER = LoggerFactory.getLogger( TomcatLauncher.class );
     private static final int port = 8080;
+
     @PostConstruct
     public void start() throws LifecycleException {
         var tomcat = new Tomcat();
